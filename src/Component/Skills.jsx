@@ -6,42 +6,48 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="py-10 pb-24 px-4 md:px-[12vw] font-sans bg-skills-gradient text-white"
+      className="relative py-16 px-4 md:px-[10vw] font-sans bg-[#0b0b0f] text-white overflow-hidden"
     >
-      {/* Title */}
-      <div className="text-center mb-10">
-        <h2 className="text-3xl sm:text-5xl font-bold">Skills</h2>
-        <div className="w-24 h-1 bg-[#8245ec] mx-auto mt-4"></div>
+      <div className="text-center mb-14">
+        <h2 className="text-4xl sm:text-5xl font-extrabold tracking-wide">
+          Skills
+        </h2>
+        <div className="w-28 h-1 bg-[#8245ec] mx-auto mt-4 rounded-full" />
       </div>
 
-      {/* Skills Sections */}
-      <div className="space-y-12">
+      <div className="space-y-16">
         {SkillsInfo.map((section, index) => (
           <div key={index}>
-            <h3 className="text-4xl font-bold mb-6">{section.title}</h3>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 md:rounded-full cursor-pointer ">
-              {section.skills.map((skill, idx) => (
-                <div
-                  key={idx}
-                  className="flex flex-col items-center bg-black rounded-full p-4 hover:scale-110 transition-transform"
-                >
-                  <Tilt
-                    className="  items-center  justify-center sm:w-44 md:w-44   rounded-full md:mt-7 md:rounded-full "
-                    tiltMaxAngleX={20}
-                    tiltMaxAngleY={20}
-                    perspective={1000}
-                    scale={1.05}
-                    gyroscope={true}
-                  >
-                    <img
-                      src={skill.logo}
-                      alt={skill.name}
-                      className=" rounded-full object-cover drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)] md:rounded-full"
-                    />
+            <h3 className="text-2xl sm:text-3xl font-bold mb-8 text-center sm:text-left">
+              {section.title}
+            </h3>
 
-                    <p className="text-sm sm:text-base font-semibold ">{skill.name}</p>
-                  </Tilt>
-                </div>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
+              {section.skills.map((skill, idx) => (
+                <Tilt
+                  key={idx}
+                  tiltMaxAngleX={18}
+                  tiltMaxAngleY={18}
+                  perspective={1200}
+                  scale={1.08}
+                  transitionSpeed={1200}
+                  gyroscope
+                  className="group"
+                >
+                  <div className="flex flex-col items-center justify-center bg-[#0b0b0f] rounded-2xl p-6 h-full transition-all duration-300 group-hover:bg-[#120f1f] group-hover:shadow-[0_0_35px_rgba(130,69,236,0.45)]">
+                    <div className="w-20 h-20 flex items-center justify-center rounded-full bg-black mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <img
+                        src={skill.logo}
+                        alt={skill.name}
+                        className="w-14 h-14 object-contain drop-shadow-[0_8px_18px_rgba(130,69,236,0.6)]"
+                      />
+                    </div>
+
+                    <p className="text-sm sm:text-base font-semibold tracking-wide text-center group-hover:text-[#b892ff] transition-colors">
+                      {skill.name}
+                    </p>
+                  </div>
+                </Tilt>
               ))}
             </div>
           </div>
@@ -52,11 +58,3 @@ const Skills = () => {
 };
 
 export default Skills;
-
-
-
-
-
-
-
-

@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutMe = () => {
   return (
-    <section id="AboutMe" className="py-12 px-6 bg-gray-900 text-white font-light">
+    <section id="AboutMe" className="py-12 px-6 bg-[#0b0b0f] text-white font-light">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-4xl font-bold mb-6 border-b-4 inline-block border-red-500 ">
           About Me
@@ -17,7 +17,7 @@ const AboutMe = () => {
           I'm a self-motivated learner, always exploring new technologies, and believe in consistent growth. My goal is not just to get a job but to build a meaningful career where I can innovate, inspire, and make an impact through code.
         </p>
         <p className="text-lg leading-relaxed mt-4">
-          Let’s build the future, one line of code at a time 🚀
+          Let’s build the future, one line of code at a time 
         </p>
       </div>
     </section>
