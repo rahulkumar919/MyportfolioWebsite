@@ -16,8 +16,7 @@ const About = () => {
           </p>
 
           <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight">
-            Hi, I’m{" "}
-            <span className="text-[#8245ec]">Rahul Kumar</span>
+            Hi, I’m <span className="text-[#8245ec]">Rahul Kumar</span>
           </h1>
 
           <h2 className="mt-4 text-xl sm:text-2xl font-semibold text-gray-300">
@@ -39,12 +38,23 @@ const About = () => {
             </span>
           </h2>
 
-          <p className="mt-8 text-base sm:text-lg text-gray-400 leading-relaxed max-w-xl mx-auto md:mx-0">
-            I’m a frontend-focused developer who enjoys crafting responsive,
-            accessible, and performance-driven web experiences. I care deeply
-            about clean code, design consistency, and building interfaces that
-            feel intuitive and fast.
+          <p className="mt-8 text-base sm:text-lg text-gray-400 leading-relaxed max-w-xl mx-auto md:mx-0 font-mono">
+            Hi, I’m Rahul Kumar. A passionate Backend & MERN Stack Developer who
+            loves building scalable, secure, and real-world web applications. I
+            focus on writing clean APIs, designing efficient databases, and
+            solving problems with strong logic. Currently sharpening my skills
+            through real projects, DSA practice In C++, and technical content
+            creation.
           </p>
+          <div class="social-link">
+            <a
+              href="https://www.youtube.com/@bcatoplacement"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              🎥 YouTube: BCA to Placement
+            </a>
+          </div>
 
           <div className="mt-10 flex flex-wrap justify-center md:justify-start gap-4">
             <a

@@ -6,7 +6,7 @@ const menuItems = [
   { id: "about", label: "Home" },
   { id: "skills", label: "Skills" },
   { id: "AboutMe", label: "AboutMe" },
-  { id: "education", label: "Education" },
+  // { id: "education", label: "Education" },
 ];
 
 const Navbar = () => {
